@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <h1>🎶 Welcome to the Music Player</h1>
+    <a href="{% url 'upload_song' %}">📤 Upload a Song</a>
+
+    <h2>Available Songs</h2>
+    <ul>
+        {% for song in songs %}
+        <li>
+            🎵 {{ song.title }}
+            <a href="{% url 'play_song' song.id %}">▶ Play</a>
+            <a href="{{ song.file.url }}" download>⬇ Download</a>
+        </li>
+        {% endfor %}
+    </ul>
+ {% endblock %}
+
+

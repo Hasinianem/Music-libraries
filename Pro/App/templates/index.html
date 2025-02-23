@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
+        .song-list { width: 60%; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        .song-item { display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd; }
+        img { width: 50px; height: 50px; border-radius: 5px; }
+        .buttons { display: flex; gap: 10px; }
+        a { text-decoration: none; padding: 8px 12px; border-radius: 5px; color: white; font-size: 14px; }
+        .play-btn { background-color: #1DB954; }
+        .download-btn { background-color: #007bff; }
+    </style>
+</head>
+<body>
+
+    <h1>🎵 Welcome to the Harmonia 🎹 Music Hub 🎵</h1>
+    <div class="song-list">
+        {% for song in songs %}
+        <div class="song-item">
+            <img src="{{ song.image }}" alt="{{ song.title }}">
+            <span>{{ song.title }} - {{ song.artist }}</span>
+            <div class="buttons">
+                <a href="{% url 'play_song' song.id %}" class="play-btn">▶ Play</a>
+                <a href="{{ song.spotify_url }}" target="_blank" class="download-btn">⬇ Download</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+ {% endblock %}
+

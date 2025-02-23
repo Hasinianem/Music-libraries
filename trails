@@ -1,0 +1,132 @@
+================index=================
+ <title>Music Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            margin: 20px auto;
+            width: 70%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        a, button {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .play-btn {
+            background-color: #1DB954;
+            color: white;
+        }
+        .download-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        iframe {
+            margin-top: 20px;
+            width: 70%;
+            height: 80px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎵 Welcome to the Music Hub 🎵</h1>
+
+    <div class="section">
+        <h2>🎶 Sample Songs</h2>
+        <ul>
+            <li>
+                <img src="https://i.scdn.co/image/ab67616d00004851b6e6e7f60e97e3c67ebd2dc8" alt="Butta Bomma">
+                <span>Telugu - Butta Bomma</span>
+                <div class="buttons">
+                    <a href="https://open.spotify.com/track/7KtC4pUL3kI1EUXt29m1vU" target="_blank" class="play-btn">▶ Play</a>
+                    <a href="https://open.spotify.com/track/7KtC4pUL3kI1EUXt29m1vU" target="_blank" class="download-btn">⬇ Download</a>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.scdn.co/image/ab67616d0000485154df6075b34e019dca9a5b53" alt="Tum Hi Ho">
+                <span>Hindi - Tum Hi Ho</span>
+                <div class="buttons">
+                    <a href="https://open.spotify.com/track/2dpaYNEQHiRxtZbfNsse99" target="_blank" class="play-btn">▶ Play</a>
+                    <a href="https://open.spotify.com/track/2dpaYNEQHiRxtZbfNsse99" target="_blank" class="download-btn">⬇ Download</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🎼 Popular Playlists</h2>
+        <ul>
+            <li>
+                <img src="https://i.scdn.co/image/ab67616d0000b273f0b41440ad282d5ab8ac3453" alt="Telugu Playlist">
+                <span>Top Telugu Songs</span>
+                <div class="buttons">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DX2pSTOxoPbx9" target="_blank" class="play-btn">▶ Play</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📀 Popular Albums</h2>
+        <ul>
+            <li>
+                <img src="https://i.scdn.co/image/ab67616d0000b273bcb4d09fa3852e038fd22f35" alt="Ala Vaikunthapurramuloo">
+                <span>Telugu - Ala Vaikunthapurramuloo</span>
+                <div class="buttons">
+                    <a href="https://open.spotify.com/album/1HKoD9zUCGIgJZ4VrO44T4" target="_blank" class="play-btn">▶ Play</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🎤 Popular Artists</h2>
+        <ul>
+            <li>
+                <img src="https://i.scdn.co/image/ab67616100005174957ae5e4e8c1bff2b659fa86" alt="Sid Sriram">
+                <span>Telugu - Sid Sriram</span>
+                <div class="buttons">
+                    <a href="https://open.spotify.com/artist/3VZxwYnjbRAh4jjLptcRtU" target="_blank" class="play-btn">▶ Play</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🎧 Spotify Music Player</h2>
+        <iframe src="https://open.spotify.com/embed/track/7KtC4pUL3kI1EUXt29m1vU" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>

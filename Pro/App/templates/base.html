@@ -1,0 +1,74 @@
+{% load static %}
+<!-- base.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Dashboard{% endblock %}</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px; /* Adjusted for fixed navbar */
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container h2 {
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .input-group input {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .input-group button {
+            border-radius: 0 5px 5px 0;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        .list-group-item {
+            font-size: 16px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+
+        .list-group-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    {% include 'header.html' %} <!-- Include the header -->
+
+    <!-- Main Content -->
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    {% include 'footer.html' %} <!-- Include the footer -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
